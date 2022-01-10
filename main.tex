@@ -21,7 +21,7 @@
 \makeatletter
 % \patchcmd{\@maketitle}{\LARGE \@title}{\fontsize{16}{19.2}\selectfont\@title}{}{}
 % \patchcmd{\@maketitle}{\LARGE \@title}{\fontsize{13.1}{19.2}\selectfont\@title}{}{}
-\patchcmd{\@maketitle}{\LARGE \@title}{\fontsize{13.5}{19.2}\selectfont\@title}{}{}
+\patchcmd{\@maketitle}{\LARGE \@title}{\fontsize{13.4}{19.2}\selectfont\@title}{}{}
 \makeatother
 
 \renewcommand\Authfont{\fontsize{12}{14.4}\selectfont}
@@ -32,8 +32,8 @@
 % \renewcommand{\tablename}{TABLE}
 
 \title{\textbf{
-    Quantum theory of electronic excitation and sputtering by transmission
-    electron microscopy
+    Quantum Theory of Electronic Excitation and Sputtering by Transmission
+    Electron Microscopy
 %     QED theory of electron beam-induced electronic excitation
 %     and its effect on sputtering cross sections in 2D crystals
 }}
@@ -210,7 +210,7 @@ experiment.
 
 %------------------------------------------------------------------------------
 % \section*{Three interactions and three rates}
-\section*{Results and discussion}
+\section*{Results and Discussion}
 \label{sec:bigPicture}
 %------------------------------------------------------------------------------
 
@@ -383,17 +383,19 @@ $\{E_d\}$.
 % and how they affect the sputtering cross section.
 % Section \ref{sec:probability} describes how to combine QED with DFT to obtain
 % $P_i$.
-The section \textit{\nameref{sec:probability}} describes how to combine QED
-with DFT to obtain $P_i$.
+The next section titled \textit{\nameref{sec:probability}} describes how to
+combine QED with DFT to obtain $P_i$.
+% The next section describes how to combine QED with DFT to obtain $P_i$.
 % Section \ref{sec:sputtering} then considers the evolution of the excited states
 % during the sputtering process to derive $\{E_d\}$ and $P_f$.
-The following section \textit{\nameref{sec:sputtering}} considers the evolution of
-the excited states during the sputtering process to derive $\{E_d\}$ and $P_f$.
+The following section titled \textit{\nameref{sec:sputtering}} considers the
+evolution of the excited states during the sputtering process to derive
+$\{E_d\}$ and $P_f$.
 It then demonstrates how our formalism significantly improves the prediction of
 sputtering rates in hBN and MoS$_2$.
 
 %------------------------------------------------------------------------------
-\section*{Probability of beam-induced excitation} 
+\section*{Probability of Beam-Induced Excitation} 
 \label{sec:probability}
 %------------------------------------------------------------------------------
 
@@ -1061,7 +1063,7 @@ $n_f$.
 The derivations of these objects are described in the next section.
 
 %---------------------------------- Results -----------------------------------
-\section*{Sputtering cross section}
+\section*{Sputtering Cross Section}
 \label{sec:sputtering}
 %------------------------------------------------------------------------------
 
@@ -1152,7 +1154,8 @@ the lowest order effects of excitation on $E_0$.
 
 % ASSUMPTION 2: SPUTTERED SYSTEM IS IN GROUND STATE
 \medskip\noindent
-\textit{Assumption 2: the sputtered system is in its ground state}.
+% \textit{Assumption 2: the sputtered system is in its ground state}.
+\textit{Assumption 2: the fully sputtered system is in its ground state}.
 Finding the plateau energy $E_s$ can be a bit more involved. To calculate it
 properly, one must track how the excitations in the CBM and VBM evolve as the
 PKA moves away from the crystal. This would require Ehrenfest dynamics of a
@@ -1225,10 +1228,11 @@ regardless of how many electrons the beam excites.
 We call the energy of the isolated ground state atom $E_a$.
 Meanwhile, the convergence of the bonding and antibonding states localized on
 the remaining vacancy during the displacement causes the excited electron and
-hole energy levels to cross multiples times.  This means that there are plenty
-of chances for an excited electron to relax nonradiatively as the PKA separates
-from the material.  Thus, we assume that the host crystal also relaxes to its
-ground state for most sputtering events.
+hole energy levels to cross multiples times.
+This means that there are plenty of chances for an excited electron to relax
+nonradiatively as the PKA separates from the material.
+Thus, we assume that the host crystal also relaxes to its ground state for most
+sputtering events.
 
 Lastly, the sputtering threshold is always larger than the vacancy formation
 energy, because some of the energy transferred to the PKA disperses to the
@@ -1277,7 +1281,8 @@ ground state vacancy and isolated atom free energies.
 
 % ASSUMPTION 3: STEP FUNCTIONS
 \medskip\noindent
-\textit{Assumption 3: the PKA intially travels at a constant velocity}.
+% \textit{Assumption 3: the PKA intially travels at a constant velocity}.
+\textit{Assumption 3: the PKA velocity is initially constant}.
 Each number of excitations creates its own energy surface.  In this way,
 electronic excitation and relaxation cause the system to \textit{hop} from
 surface to surface.  In our problem, the initial beam-induced excitation
@@ -1362,7 +1367,7 @@ All positive displacement thresholds computed for this work are listed in table
 \ref{tab:Ed}.
 Explanations for the calculations of $E_v$, $E_a$, $E_0(0)$, and $E_g$ are
 % given in subsctions \ref{sec:hBN} and \ref{sec:MoS2}.
-given in the subsections \textit{\nameref{sec:hBN}} and
+given in the subsections titled \textit{\nameref{sec:hBN}} and
 \textit{\nameref{sec:MoS2}}.
 The three largest displacement thresholds for MoS$_2$ with $n_f = 0$, 1, and 2
 excitations are similar to those calculated with DFT-based molecular dynamics

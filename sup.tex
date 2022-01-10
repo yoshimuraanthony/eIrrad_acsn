@@ -3,6 +3,7 @@
 \usepackage{float}  % prevent 'floating' of figures (force position)
 \usepackage{cite}  % order lists of citations
 % \usepackage[labelsep=period]{caption}  % end caption title with '.' (not ':')
+\usepackage{nameref}  % reference unnumbered sections by name
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{physics}
@@ -18,7 +19,7 @@
 \externaldocument{main}
 
 \makeatletter
-\patchcmd{\@maketitle}{\LARGE \@title}{\fontsize{13.5}{19.2}\selectfont\@title}{}{}
+\patchcmd{\@maketitle}{\LARGE \@title}{\fontsize{13.4}{19.2}\selectfont\@title}{}{}
 \makeatother
 
 \renewcommand\Authfont{\fontsize{12}{14.4}\selectfont}
@@ -35,8 +36,8 @@
 
 \title{\textbf{
     Supplemental Material: \\
-    Quantum theory of electronic excitation and sputtering by transmission
-    electron microscopy
+    Quantum Theory of Electronic Excitation and Sputtering by Transmission
+    Electron Microscopy
 %     QED theory of electron beam-induced electronic excitation
 %     and its effect on sputtering cross sections in 2D crystals
 %     QED theory of electron beam-induced \\ excitation rates and
@@ -139,8 +140,12 @@ while
   \label{eq:bar}
 \end{equation}
 %
-As justified in section \ref{sec:ee}, we need only evaluate the t-channel
-contribution to $\mathcal{M}$ and multiply the result by 2.  That is, 
+% As justified in section \ref{sec:ee}, we need only evaluate the t-channel
+% contribution to $\mathcal{M}$ and multiply the result by 2.  That is, 
+As justified in the subsection titled \textit{\nameref{sec:ee}}, we need only
+evaluate the t-channel contribution to $\mathcal{M}$ and multiply the result by
+2.
+That is, 
 
 \begin{equation} 
   \label{eq:t} 
@@ -195,9 +200,11 @@ for more details.
 \label{app:normalization}
 %-------------------------------------------------------------------------------
 
-When integrating over 4-momentum space as is done in section
-\ref{sec:wavepackets}, Lorentz invariance constrains a particle's 4-momentum to
-obey $p^2 = m^2$.
+When integrating over 4-momentum space as is done in the subsection titled
+% \ref{sec:wavepackets}, Lorentz invariance constrains a particle's 4-momentum to
+% obey $p^2 = m^2$.
+\textit{\ref{sec:wavepackets}}, Lorentz invariance constrains a particle's
+4-momentum to obey $p^2 = m^2$.
 It follows that the 4-momentum integration measure $d^4p$ is always multiplied
 by a delta function $\delta(p^2-m^2)$, i.e.,
 
@@ -387,7 +394,8 @@ smaller than that of the beam electron.
     microscopy and defect engineering.
     However, as mentioned in the main text, the validity of our perturbative
     approximation to the scattering operator breaks down at low beam energies
-    (section \ref{sec:Pi}).
+%     (section \ref{sec:Pi}).
+    (see \textit{\nameref{sec:Pi}}).
     Thus, the values and positions of these peaks may change if higher order
     perturbation terms are considered.
   }
@@ -563,7 +571,9 @@ value of $E_\text{min}$ when $E_\text{min} \ll E_\text{max}$.
 This is because the post-collision velocity of the PKA diminishes when the
 energy transfer $E$ shrinks.
 The beam-induced excitations therefore have more time to relax before the PKA
-reaches the step in the energy surface (section \ref{sec:assumptions}).
+% reaches the step in the energy surface (section \ref{sec:assumptions}).
+reaches the step in the energy surface (see
+\textit{\nameref{sec:assumptions}}).
 This makes $P_f$ small for small $E$, so that contributions to the integral in
 equation (\ref{eq:totSigma}) are extremely tiny for $E$ near $E_\text{min}$.
 As a result, changes in $E_\text{min}$ are essentially immeasurable for beam
