@@ -3,6 +3,7 @@
 \usepackage{float}  % prevent 'floating' of figures (force position)
 \usepackage{cite}  % order lists of citations
 % \usepackage[labelsep=period]{caption}  % end caption title with '.' (not ':')
+\usepackage{nameref}  % reference unnumbered sections by name
 \usepackage[utf8]{inputenc} 
 \usepackage{amsmath}
 \usepackage{physics} 
@@ -35,12 +36,6 @@
     electron microscopy
 %     QED theory of electron beam-induced electronic excitation
 %     and its effect on sputtering cross sections in 2D crystals
-%     QED theory of electronic excitation and sputtering rates in 2D crystals
-%     under\\electron irradiation
-%     QED theory of electron beam-induced excitation rates and
-%     sputtering cross sections in 2D crystals
-%     QED theory of electron beam-induced electronic excitation and
-%     sputtering in 2D crystals
 }}
 \author[1,2*]{Anthony Yoshimura} 
 \author[2]{Michael Lamparski} 
@@ -98,12 +93,13 @@ Polytechnic Institute, Troy, NY 12180, USA}
   variety of beam-driven phenomena in any crystalline material.
 \end{abstract}
 
-{\bf Keywords:}
+\noindent{\bf Keywords:} quantum electrodynamics, density functional theory, 2D
+materials, transmission electron microscopy, defect engineering
 \pagebreak
     
 %------------------------------------------------------------------------------
-\section{Introduction} 
-\label{sec:introduction}
+% \section*{Introduction} 
+% \label{sec:introduction}
 %------------------------------------------------------------------------------
 
 % Context: what do the readers need to know to understand the need?
@@ -213,7 +209,8 @@ experiment.
 % functionality.
 
 %------------------------------------------------------------------------------
-\section{Three interactions and three rates}
+% \section*{Three interactions and three rates}
+\section*{Results and discussion}
 \label{sec:bigPicture}
 %------------------------------------------------------------------------------
 
@@ -361,15 +358,6 @@ cross section can be written as
 
 \begin{equation}
   \begin{aligned}
-%     \sigma
-%     &=
-%     \sum_{n_i=0}^\infty
-%     P_i
-%     \sum_{n_f=0}^{n_i}
-%     \int_{E_d(n_f)}^{E_\text{max}}
-%     P_f
-%     \frac{d\sigma}{dE}
-%     dE
     \sigma(\epsilon_b, \{{E}_d\}, \tau)
     &=
     \sum_{n_i=0}^\infty
@@ -383,13 +371,9 @@ cross section can be written as
   \label{eq:totSigma}
 \end{equation}
 %
-% Equation (\ref{eq:totSigma}) shows that the sputtering cross section depends
-% on three distributions: $P_i$, $P_f$, and $d\sigma/dE$.
 If $P_i$ and $P_f$ are non-negligible when $n_i$ and $n_f$ are nonzero, and
 $E_d$ depends strongly on $n_f$, then interactions with the material electrons
 must be considered.
-% This leads to a non-negligible probability of nonzero $n_f$.
-% This is the case in insulators.
 We will later show that this makes $\sigma$ in equation (\ref{eq:totSigma})
 larger than $\sigma_0$ in equation (\ref{eq:basicSigma}) for all beam energies,
 most prominently when $\epsilon_b < \epsilon_c$.
@@ -397,15 +381,19 @@ most prominently when $\epsilon_b < \epsilon_c$.
 The remainder of this paper focuses on the derivations of $P_i$, $P_f$, and
 $\{E_d\}$.
 % and how they affect the sputtering cross section.
-Section \ref{sec:probability} describes how to combine QED with DFT to obtain
-$P_i$.
-Section \ref{sec:sputtering} then considers the evolution of the excited states
-during the sputtering process to derive $\{E_d\}$ and $P_f$. It then demonstrates
-how our formalism significantly improves the prediction of sputtering rates in
-hBN and MoS$_2$.
+% Section \ref{sec:probability} describes how to combine QED with DFT to obtain
+% $P_i$.
+The section \textit{\nameref{sec:probability}} describes how to combine QED
+with DFT to obtain $P_i$.
+% Section \ref{sec:sputtering} then considers the evolution of the excited states
+% during the sputtering process to derive $\{E_d\}$ and $P_f$.
+The following section \textit{\nameref{sec:sputtering}} considers the evolution of
+the excited states during the sputtering process to derive $\{E_d\}$ and $P_f$.
+It then demonstrates how our formalism significantly improves the prediction of
+sputtering rates in hBN and MoS$_2$.
 
 %------------------------------------------------------------------------------
-\section{Probability of beam-induced excitation} 
+\section*{Probability of beam-induced excitation} 
 \label{sec:probability}
 %------------------------------------------------------------------------------
 
@@ -456,7 +444,7 @@ determine $P_i(\epsilon_b, n_i)$.
 The following subsections address each step (i-iv) in detail.
 
 %------------------------------------------------------------------------------
-\subsection{Scattering of free electrons} 
+\subsection*{Scattering of free electrons} 
 \label{sec:ee}
 %------------------------------------------------------------------------------
 
@@ -599,7 +587,7 @@ Equation (\ref{eq:T}) is used to derive the scattering amplitude between two
 arbitrary wave packets in the next subsection.
 
 %------------------------------------------------------------------------------
-\subsection{Scattering of wave packets} 
+\subsection*{Scattering of wave packets} 
 \label{sec:wavepackets}
 %------------------------------------------------------------------------------
 
@@ -705,7 +693,7 @@ In the next subsection, we replace $\ket{\phi_{1\dots 4}}$ with states relevant 
 electron beam-induced excitation.
 
 %------------------------------------------------------------------------------
-\subsection{Probability of a crystal excitation} 
+\subsection*{Probability of a crystal excitation} 
 \label{sec:crystal}
 %------------------------------------------------------------------------------
 
@@ -897,7 +885,7 @@ band state $\ket{n'\mathbf{k'}}$ for a given beam energy $\epsilon_b$, that is,
 % determine to likelihood of exciting a particular number of electrons.
 
 %------------------------------------------------------------------------------
-\subsection{Probability of $n_i$ excitations}
+\subsection*{Probability of $n_i$ excitations}
 \label{sec:Pi}
 %------------------------------------------------------------------------------
 
@@ -1053,7 +1041,8 @@ Lastly, the excitation probability is inversely proportional to the material's
 band gap.
 This is because the zeroth component of the momentum transfer $q$ depicted in
 figure \ref{fig:tu} is the difference in energy eigenvalues between the
-occupied and unoccupied states (section \ref{sec:crystal}).
+% occupied and unoccupied states (section \ref{sec:crystal}).
+occupied and unoccupied states (see \textit{\nameref{sec:crystal}}).
 Thus, the smallest possible denominator of the $t$-channel in equation
 (\ref{eq:M}) is proportional to the difference in eigenvalues squared.
 The experimentally measured band gap of MoS$_2$ about 1.9 eV \cite{Gusakova2017}
@@ -1072,7 +1061,7 @@ $n_f$.
 The derivations of these objects are described in the next section.
 
 %---------------------------------- Results -----------------------------------
-\section{Sputtering cross section}
+\section*{Sputtering cross section}
 \label{sec:sputtering}
 %------------------------------------------------------------------------------
 
@@ -1096,7 +1085,7 @@ well with experiment for appropriate values of $\tau$ for each material.
 % This drastically reduce the disparity between theory and experiment.  
 
 %------------------------------------------------------------------------------
-\subsection{Effect of excitations on the displacement threshold}
+\subsection*{Effect of excitations on the displacement threshold}
 \label{sec:assumptions}
 %------------------------------------------------------------------------------
 
@@ -1372,7 +1361,9 @@ set of displacement thresholds $\{E_d\}$ to insert into equation
 All positive displacement thresholds computed for this work are listed in table
 \ref{tab:Ed}.
 Explanations for the calculations of $E_v$, $E_a$, $E_0(0)$, and $E_g$ are
-given in subsctions \ref{sec:hBN} and \ref{sec:MoS2}.
+% given in subsctions \ref{sec:hBN} and \ref{sec:MoS2}.
+given in the subsections \textit{\nameref{sec:hBN}} and
+\textit{\nameref{sec:MoS2}}.
 The three largest displacement thresholds for MoS$_2$ with $n_f = 0$, 1, and 2
 excitations are similar to those calculated with DFT-based molecular dynamics
 simulations \cite{Kretschmer2020}.
@@ -1433,7 +1424,7 @@ $\tau$.
 \end{table}
 
 %------------------------------------------------------------------------------
-\subsection{Sputtering cross section in terms of the excitation lifetime}
+\subsection*{Sputtering cross section in terms of the excitation lifetime}
 \label{sec:lifetime}
 %------------------------------------------------------------------------------
 
@@ -1572,14 +1563,16 @@ the integration over $E$ analytically in equations (\ref{eq:integral}) and
 (\ref{eq:analytical}), setting $\{E_d\}$ in equation (\ref{eq:Ed}) as the lower
 integration bounds.
 We also have a criterion to truncate the summation over $n_i$ at
-$n_i^\text{max}$ for a given material, as described at the end of section
-\ref{sec:assumptions}.
+% $n_i^\text{max}$ for a given material, as described at the end of section
+% \ref{sec:assumptions}.
+$n_i^\text{max}$ for a given material, as described at the end of 
+\textit{\nameref{sec:assumptions}}.
 In the following subsections, we use these results to calculate the sputtering
 cross sections of hBN and MoS$_2$.
 
-
 %------------------------------------------------------------------------------
-\subsection{Boron and nitrogen sputtering from hexagonal boron nitride}
+% \subsection*{Boron and nitrogen sputtering from hexagonal boron nitride}
+\subsection*{Boron and nitrogen sputtering from hBN}
 \label{sec:hBN}
 %------------------------------------------------------------------------------
 
@@ -1698,7 +1691,8 @@ These findings could facilitate precise control of nanopore growth rates in hBN
 under electron irradiation.
 
 %------------------------------------------------------------------------------
-\subsection{Sulfur sputtering from molybdenum disulfide}
+% \subsection*{Sulfur sputtering from molybdenum disulfide}
+\subsection*{Sulfur sputtering from MoS$_2$}
 \label{sec:MoS2}
 %------------------------------------------------------------------------------
 
@@ -1834,7 +1828,7 @@ sputtering rate to peak at a beam energy well-below the expected ground state
 critical energy.
 
 %------------------------------- Conclusion ---------------------------------
-\section{Conclusion}
+\section*{Conclusion}
 \label{sec:conclusion}
 %-------------------------------------------------------------------------------
 
@@ -1926,7 +1920,7 @@ use of electron beams for precise atomic-scale engineering of crystalline
 materials.
 
 %-----------------------------------------------------------------------------
-\section{Methods}
+\section*{Methods}
 \label{sec:methods}
 %-------------------------------------------------------------------------------
 
@@ -1989,7 +1983,7 @@ The most dense k-point meshes used to fit these curves had dimensions of
 $45\times45\times1$ and $36\times36\times1$ for hBN and MoS$_2$ respectively.
 
 %-----------------------------------------------------------------------------
-\section{Acknowledgements}
+\section*{Acknowledgements}
 \label{sec:acknowledgements}
 %-----------------------------------------------------------------------------
 
@@ -2094,7 +2088,7 @@ Sciences, a U.S. DOE Office of Science User Facility.
 % \end{document}
 
 % %------------------------------------------------------------------
-% \section{The virtual photon propagator}
+% \section*{The virtual photon propagator}
 % \label{sec:chi}
 % %------------------------------------------------------------------
 
