@@ -1,0 +1,65 @@
+# 01/10/22: cover letter
+
+Dear Editor,
+
+Please find our uploaded manuscript “Quantum theory of electron excitation and
+sputtering by transmission electron spectroscopy” that we are hereby submitting
+for consideration as an article in ACS Nano.
+
+Electron beam irradiation by transmission electron microscopy (TEM) is an
+effective tool for defect engineering in 2-dimensional (2D) materials,
+potentially with atomic-scale precision.
+This degree of spatial control can provide powerful solutions to many of
+today’s most pressing challenges in nanotechnology, including quantum device
+fabrication, hydrogen evolution catalysis, and electronic device
+miniaturization.
+Often, beam-induced defects are initiated and sculpted through a process called
+sputtering, in which a beam electron knocks an atom out of the material.
+However, despite the broad application of TEM-driven defect engineering in
+materials science, current theoretical models fail to describe this effect,
+highlighting the fact that the non-equilibrium physics taking place during
+sputtering remains poorly understood.
+Specifically, existing models drastically underestimate sputtering rates in
+insulators, in which beam-induced electronic excitations may weaken the bonding
+between the irradiated atoms.
+Most notably, substantial sputtering is experimentally observed at beam
+energies deemed far too low to drive atomic dislocations by present-day
+theories.
+To address this anomalous behavior, this work develops the first quantum
+electrodynamics (QED)-based method to accurately describe electron beam-induced
+sputtering cross sections in 2D crystals by explicitly calculating the
+probabilities of beam-induced electronic excitations and their effects on
+sputtering kinetics. 
+The consideration of excitations yields cross sections that quantitatively
+match experiment and correctly predict appreciable sputtering rates at beam
+energies previously predicted to leave the crystal intact.
+This new predictive theory can pave the way for the use of TEM for top-down
+atomic-scale defect engineering of 2D insulators. 
+
+
+We feel that this work meets the acceptance criteria of ACS Nano, as it
+significantly advances the state of the art in modelling the response of
+materials to electron irradiation.
+The QED-based prediction of excitation rates could also push efforts to
+simulate both TEM images and electron energy loss spectra towards a more
+analytical, quantum field theory-based direction.
+Furthermore, we believe that this article will appeal to the diverse readership
+of ACS Nano.
+We have attempted to present our findings in a logical and pedagogical manner,
+including sufficient background information and motivation to make our work
+accessible to a broad audience.
+At the same time, the article also provides in-depth derivations and technical
+details for experts who wish to reproduce our results.
+
+This manuscript has not been published and is not under consideration for
+publication elsewhere.
+We have no conflicts of interest to disclose.
+
+Thank you for your consideration.
+
+On behalf of all the authors,
+
+Anthony Yoshimura, PhD
+Lawrence Livermore National Laboratory
+Livermore, CA 94550, USA
+
