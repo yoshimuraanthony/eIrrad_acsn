@@ -1158,9 +1158,10 @@ the lowest order effects of excitation on $E_0$.
 \textit{Assumption 2: the fully sputtered system is in its ground state}.
 Finding the plateau energy $E_s$ can be a bit more involved. To calculate it
 properly, one must track how the excitations in the CBM and VBM evolve as the
-PKA moves away from the crystal. This would require Ehrenfest dynamics of a
-supercell over timescales of hundreds of femtoseconds, which is prohibitively
-expensive.
+PKA moves away from the crystal.
+This would require Ehrenfest dynamics of a supercell over timescales of
+hundreds of femtoseconds for each excitation  considered, which is
+prohibitively expensive.
 % Here we choose to perform as few DFT calculations as possible while still
 Here we seek a much less costly set of DFT calculations that can still provide
 a reasonable approximation for $E_s$.
@@ -1992,8 +1993,20 @@ $45\times45\times1$ and $36\times36\times1$ for hBN and MoS$_2$ respectively.
 \label{sec:si}
 %-----------------------------------------------------------------------------
 
-S1: Derivation of the invariant matrix element used in introduced in equation
-(\ref{eq:M}).
+S1: Derivation of the invariant matrix element $\mathcal{M}$ introduced in
+equation (\ref{eq:M}).
+S2: Description of the normalization scheme used for the integral in equation
+(\ref{eq:amp}).
+S3: Derivation of $p_3^z$ that conserves energy and momentum.
+S4: Convergence of $\sigma$ with respect to $n_i^\text{max}$.
+S5: Peaks in the sputtering cross section of hBN for low beam energies.
+S6: Fitting and convergence of $S$ with respect to various parameters.
+S7: Derivation of the minimum energy transfer $E_\text{min}$ mentioned after
+equation (\ref{eq:Ed}).
+(PDF)
+
+\noindent Details on the derivation of $\mathcal{M}$ (Mathematica notebook).
+
 
 %-----------------------------------------------------------------------------
 \section*{Acknowledgements}
