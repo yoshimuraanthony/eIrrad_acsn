@@ -4,6 +4,7 @@
 \usepackage{cite}  % order lists of citations
 % \usepackage[labelsep=period]{caption}  % end caption title with '.' (not ':')
 \usepackage{nameref}  % reference unnumbered sections by name
+% \usepackage{style=chem-acs]{biblatex}
 \usepackage[utf8]{inputenc} 
 \usepackage{amsmath}
 \usepackage{physics} 
@@ -94,7 +95,8 @@ Polytechnic Institute, Troy, NY 12180, USA}
 \end{abstract}
 
 \noindent{\bf Keywords:} quantum electrodynamics, density functional theory, 2D
-materials, transmission electron microscopy, defect engineering
+materials, transmission electron microscopy, electronic excitation, sputtering,
+defect engineering
 \pagebreak
     
 %------------------------------------------------------------------------------
@@ -109,7 +111,7 @@ material structure.
 Towards this aim, electron irradiation by transmission electron microscopy
 (TEM) can be an effective means of structural manipulation with spatial control
 \cite{Banhart1999, Egerton2013, Zhao2017, Susi2019}.
-Structural changes under electron irradiation can arise via atomic displacement
+Structural changes under electron irradiation can arise \textit{via} atomic displacement
 in which an incident electron nudges a material atom from its initial site.  We
 call this atom the primary knock-on atom (PKA).  Two-dimensional (2D) crystals
 provide an excellent platform to measure the rates of these PKA displacements.
@@ -162,8 +164,8 @@ is about 90 keV, sulfur has been shown to sputter under 20 keV beams
 % rate is orders of magnitude larger than the calibration.
 Discrepancies like these suggest that the displacement thresholds in insulating
 crystals are much smaller than what is predicted by ground-state theory.
-Lehnert et al.  have proposed that the consideration of inelastic scattering,
-i.e., beam-induced electronic excitation, can lead to such a reduction in the
+Lehnert \textit{et al.}  have proposed that the consideration of inelastic scattering,
+\textit{i.e.}, beam-induced electronic excitation, can lead to such a reduction in the
 displacement threshold \cite{Lehnert2017}.
 This would increase the sputtering cross section for all beam energies and
 enable sputtering for energies well-below the ground state $\epsilon_c$.
@@ -468,7 +470,7 @@ The following subsections address each step (i-iv) in detail.
 \end{figure}
 
 We first derive the scattering amplitude for momentum transfer between two free
-electrons via M{\o}ller scattering \cite{Moller1932, Kragh1992, Roqu1992}.
+electrons \textit{via} M{\o}ller scattering \cite{Moller1932, Kragh1992, Roqu1992}.
 With this, the interaction between actual material states can be written as a
 linear combination of these free-particle interactions.
 Going forward, we label the 4-momenta of the incoming electrons as $p_1$ and
@@ -604,7 +606,7 @@ The free particle scattering amplitude in equation (\ref{eq:T}) can be used to
 determine the amplitude for the scattering of two arbitrary electron states
 $\phi_1$ and $\phi_2$ into $\phi_3$ and $\phi_4$.
 This is obtained by sandwiching the scattering operator between the initial and
-final 2-particle states, i.e.,
+final 2-particle states, \textit{i.e.},
 
 \begin{equation} 
   \label{eq:amp} 
@@ -671,7 +673,7 @@ The normalization of 4-momentum states $\ket{p_n}$ in terms of
 %
 We can then discretize the momenta by replacing $d^3p_i/(2\pi)^3$ with $V^{-1}$
 and $d^2p_i^\perp/(2\pi)^2$ with $A^{-1}$, where $V$ and $A$ are the volume and
-cross sectional area of the simulated crystal, i.e., the volume and
+cross sectional area of the simulated crystal, \textit{i.e.}, the volume and
 cross sectional area of the unit cell times the number of k-points used to
 sample the BZ.
 With this, the amplitude for electron states $\ket{\phi_1}$ and $\ket{\phi_2}$
@@ -740,7 +742,7 @@ Meanwhile, the momentum of the crystal states can be treated
 nonrelativistically.
 Thus, the zeroth components of the crystal state momenta
 are the energy eigenvalues of the crystal state plus the electron rest mass,
-i.e.,
+\textit{i.e.},
 $\epsilon_2=\epsilon_{n\mathbf{k}} + m$
 and
 $\epsilon_3=\epsilon_{n'\mathbf{k'}} + m$.
@@ -909,7 +911,7 @@ where $\mathbf{k}$ and $\mathbf{k'}$ run over all k-points, $n$ over
 the valence bands, and $n'$ over the conduction bands (those possessing states
 with energy between the Fermi level and the work function).
 The index $j$ in the right-most expression labels the possible single-particle
-excitations (e.g., $j=n'\mathbf{k'}\leftarrow n\mathbf{k}$).
+excitations (\textit{e.g.}, $j=n'\mathbf{k'}\leftarrow n\mathbf{k}$).
 
 Combinatorics tells us that the probability of exciting exactly one excitation
 is
@@ -1129,7 +1131,7 @@ $E_0$ and $E_s$.  To facilitate this, we make the following assumptions.
 \textit{Assumption 1: the excited electrons and holes occupy the band edges}.
 To justify this, we shift our focus to the material electrons immediately after
 the collision.  There are now $n_i$ electrons in the conduction band and $n_i$
-holes in the valence bands.  Kretschmer et al. simulated the time-evolution of
+holes in the valence bands.  Kretschmer \textit{et al.} simulated the time-evolution of
 these excitations using Ehrenfest dynamics \cite{Kretschmer2020,Li2005}.
 They found that the excited electrons relax nonradiatively to the conduction
 band minimum (CBM) in a few femtoseconds, while the holes in the valence band
@@ -1158,13 +1160,14 @@ the lowest order effects of excitation on $E_0$.
 \textit{Assumption 2: the fully sputtered system is in its ground state}.
 Finding the plateau energy $E_s$ can be a bit more involved. To calculate it
 properly, one must track how the excitations in the CBM and VBM evolve as the
-PKA moves away from the crystal. This would require Ehrenfest dynamics of a
-supercell over timescales of hundreds of femtoseconds, which is prohibitively
-expensive.
+PKA moves away from the crystal.
+This would require Ehrenfest dynamics of a supercell over timescales of
+hundreds of femtoseconds for each excitation  considered, which is
+prohibitively expensive.
 % Here we choose to perform as few DFT calculations as possible while still
 Here we seek a much less costly set of DFT calculations that can still provide
 a reasonable approximation for $E_s$.
-To this end, we draw upon another finding of Kretschmer et al.
+To this end, we draw upon another finding of Kretschmer \textit{et al.}
 \cite{Kretschmer2020}.
 After excitation, the displacement of the PKA causes the occupied and
 unoccupied CBM and VBM states to converge into the band gap and localize on the
@@ -1287,7 +1290,7 @@ Each number of excitations creates its own energy surface.  In this way,
 electronic excitation and relaxation cause the system to \textit{hop} from
 surface to surface.  In our problem, the initial beam-induced excitation
 perches the system on an elevated surface.  Once there, electronic relaxation
-via spontaneous emission (SE) enables downward surface hopping at the cost
+\textit{via} spontaneous emission (SE) enables downward surface hopping at the cost
 of the emitted photon energy.
 % This means that the energy surface is no longer constant
 In this framework, $E_d$ is the energy gained along all energy surfaces
@@ -1301,7 +1304,7 @@ from the crystal.
 This means there must be some distance $d$ beyond which SE no
 longer affects the forces on the sputtered atom, leaving the energy surface
 unchanged.
-We take $d=4.5$ {\AA} in line with Kretschmer et al.'s study, though we
+We take $d=4.5$ {\AA} in line with Kretschmer \textit{et al.}'s study, though we
 acknowledge that the exact meaning of this distance is different in their work
 \cite{Kretschmer2020}.
 
@@ -1311,7 +1314,7 @@ We do this by assuming that each energy surface is constant except for a step
 when the PKA reaches a distance $d$ away from its equilibrium site.
 This means that immediately after the collision that excites $n_i$ electrons,
 the surface assumes a constant energy $E_0(n_i)$.
-Each relaxation via SE causes the system to drop to the surface beneath it,
+Each relaxation \textit{via} SE causes the system to drop to the surface beneath it,
 decreasing its energy by $E_g$.
 We define $n_f$ as the number of electronic excitations that survive the PKA's
 traversal of distance $d$ to the energy step.
@@ -1594,7 +1597,7 @@ As the edge atoms continue to sputter away at a high rate, the nanopore grows,
 eventually extending up to a few nm in diameter
 \cite{Meyer2009,Cretu2015,Dogan2020}.
 
-Cretu et al. measured the radial growth of these nanopores under electron
+Cretu \textit{et al.} measured the radial growth of these nanopores under electron
 irradiation for several temperatures ranging from 673 to 1473 K
 \cite{Cretu2015}.
 By dividing the radial growth rate by the beam current, they estimated the
@@ -1602,7 +1605,7 @@ sputtering cross section to be around 25 barn under both 30 and 60 keV beams at
 temperatures of 1273 K and below (figure \ref{fig:edgeCross}c).
 The cross sections were fairly temperature independent at these relatively low
 temperatures.
-Cretu et al. also found that the edges of these pores most often assume an
+Cretu \textit{et al.} also found that the edges of these pores most often assume an
 armchair structure.
 Therefore, in an attempt to reproduce these measurements, we calculate the
 cross section of boron and nitrogen sputtering from an armchair edge at 1273 K
@@ -1642,7 +1645,7 @@ described in our previous work \cite{Yoshimura2018}.
     out-of-plane and in-plane perspectives respectively.
     Panel (c) plots the sputtering cross sections of both boron and nitrogen in
     green and blue respectively.
-    The black curves are the total sputtering cross section, i.e., the sum of
+    The black curves are the total sputtering cross section, \textit{i.e.}, the sum of
     their corresponding blue and green curves.
     The solid curves account for beam-induced excitations assuming an
     excitation lifetime of $\tau=240$ fs (labelled ``exc.'' for excited).
@@ -1658,7 +1661,7 @@ described in our previous work \cite{Yoshimura2018}.
   \label{fig:edgeCross}
 \end{figure}
 
-Fitting our cross section curves to the data of Cretu et al. yields an excellent
+Fitting our cross section curves to the data of Cretu \textit{et al.} yields an excellent
 agreement if the predicted excitation lifetime is set to $\tau \sim 240$ fs.
 This predicted lifetime is much shorter than the reported excitation lifetime
 of $\sim$0.75 ns in pristine hBN \cite{Li2016b}, indicating that the sputtering
@@ -1701,7 +1704,7 @@ under electron irradiation.
 \label{sec:MoS2}
 %------------------------------------------------------------------------------
 
-Kretschmer et al. measured the sputtering cross section of sulfur from MoS$_2$
+Kretschmer \textit{et al.} measured the sputtering cross section of sulfur from MoS$_2$
 for several beam energies ranging from 20 to 80 keV \cite{Kretschmer2020}.
 They found a peak in the cross section at 30 keV, much less than the predicted
 ground state $\epsilon_c\sim 90$ keV \cite{Kretschmer2020}.
@@ -1715,7 +1718,7 @@ We then set $E_g$ equal to the experimental band gap of 1.88 eV
 \cite{Gusakova2017}.
 Using the resulting $\{E_d\}$, we find that summing over the contributions
 of final excitation numbers $n_f > 2$ to the sputtering cross section produces
-a peak just below 30 keV, matching Kretschmer et al.'s findings remarkably
+a peak just below 30 keV, matching Kretschmer \textit{et al.}'s findings remarkably
 well.
 In fitting to this peak, we predict an excitation lifetime of $\tau \sim 81$
 fs.
@@ -1879,7 +1882,7 @@ scattering can be incorporated into the calculation of $P_i$
 % they have shorter lifetimes and a smaller excitation probability due to the
 % much larger excitation energies involved.  
 Moreover, spin polarization effects can also be examined by making $\mathcal{M}$
-spin-dependent, i.e., not averaging over spins as is done in equation
+spin-dependent, \textit{i.e.}, not averaging over spins as is done in equation
 (\ref{eq:M}).
 The beam electron path can also change significantly after collision with
 the nucleus.
@@ -1992,8 +1995,20 @@ $45\times45\times1$ and $36\times36\times1$ for hBN and MoS$_2$ respectively.
 \label{sec:si}
 %-----------------------------------------------------------------------------
 
-S1: Derivation of the invariant matrix element used in introduced in equation
-(\ref{eq:M}).
+S1: Derivation of the invariant matrix element $\mathcal{M}$ introduced in
+equation (\ref{eq:M}).
+S2: Description of the normalization scheme used for the integral in equation
+(\ref{eq:amp}).
+S3: Derivation of $p_3^z$ that conserves energy and momentum.
+S4: Convergence of $\sigma$ with respect to $n_i^\text{max}$.
+S5: Peaks in the sputtering cross section of hBN for low beam energies.
+S6: Fitting and convergence of $S$ with respect to various parameters.
+S7: Derivation of the minimum energy transfer $E_\text{min}$ mentioned after
+equation (\ref{eq:Ed}).
+(PDF)
+
+\noindent Details on the derivation of $\mathcal{M}$ (Mathematica notebook).
+
 
 %-----------------------------------------------------------------------------
 \section*{Acknowledgements}
@@ -2114,7 +2129,7 @@ Sciences, a U.S. DOE Office of Science User Facility.
 % as is the case in equation (\ref{eq:spinors}).  We have not yet explicitly
 % written the form of the photon propagator.
 
-% Suppose that the transmitted photon behaves like a free particle, i.e., it
+% Suppose that the transmitted photon behaves like a free particle, \textit{i.e.}, it
 % does not undergo any interactions as it propagates between the two electrons.
 % For this case, the free photon propagator takes the form\cite{Lancaster2014,
 % Peskin1995}
@@ -2350,7 +2365,7 @@ Sciences, a U.S. DOE Office of Science User Facility.
 % destroy the properties of the pristine material, they can vastly extend the
 % space of possible applications.  Electron irradiation by transmission electron
 % microscopy (TEM) is an effective method for engineering the properties and
-% morphology of an irradiated material with sub-angstrom precision via selective
+% morphology of an irradiated material with sub-angstrom precision \textit{via} selective
 % atomic displacement \cite{Zhao2017, Schleberger2018, Oxley2014,
 % Kretschmer2018,Komsa2013}.
 

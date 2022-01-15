@@ -1,0 +1,25 @@
+\BOOKMARK [1][-]{toc1.1}{Contents}{}% 1
+\BOOKMARK [1][-]{section.1}{1 Introduction}{}% 2
+\BOOKMARK [1][-]{section.2}{2 Installation}{}% 3
+\BOOKMARK [1][-]{section.3}{3 Requirements}{}% 4
+\BOOKMARK [1][-]{section.4}{4 The class file}{}% 5
+\BOOKMARK [2][-]{subsection.4.1}{4.1 Class options}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.2}{4.2 Manuscript meta-data}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.3}{4.3 Floats}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.4}{4.4 Section headers}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.5}{4.5 Special sections}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.6}{4.6 Miscellaneous commands}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{5 The package file}{}% 12
+\BOOKMARK [2][-]{subsection.5.1}{5.1 Package options}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.2}{5.2 Bibliography notes}{section.5}% 14
+\BOOKMARK [1][-]{section.6}{6 The BibTeX style files}{}% 15
+\BOOKMARK [1][-]{section.7}{7 The natmove package}{}% 16
+\BOOKMARK [1][-]{section.8}{8 Implementation}{}% 17
+\BOOKMARK [2][-]{subsection.8.1}{8.1 Early class-only code}{section.8}% 18
+\BOOKMARK [2][-]{subsection.8.2}{8.2 Early package-only code}{section.8}% 19
+\BOOKMARK [2][-]{subsection.8.3}{8.3 Common code}{section.8}% 20
+\BOOKMARK [2][-]{subsection.8.4}{8.4 Late class-only code}{section.8}% 21
+\BOOKMARK [2][-]{subsection.8.5}{8.5 Late shared code}{section.8}% 22
+\BOOKMARK [2][-]{subsection.8.6}{8.6 Late package-only code}{section.8}% 23
+\BOOKMARK [2][-]{subsection.8.7}{8.7 Moving citations with natbib}{section.8}% 24
+\BOOKMARK [2][-]{subsection.8.8}{8.8 The configuration files}{section.8}% 25
