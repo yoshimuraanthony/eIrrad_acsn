@@ -1,46 +1,48 @@
 This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
-The style file: ieeetr.bst
+The style file: achemso.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: library.bib
+achemso 2017/01/21 v3.10h
 You've used 55 entries,
-            1876 wiz_defined-function locations,
-            875 strings with 14923 characters,
-and the built_in function-call counts, 19614 in all, are:
-= -- 2008
-> -- 889
-< -- 0
-+ -- 318
-- -- 263
-* -- 1478
-:= -- 2698
-add.period$ -- 57
+            2536 wiz_defined-function locations,
+            1225 strings with 21106 characters,
+and the built_in function-call counts, 21112 in all, are:
+= -- 1574
+> -- 1418
+< -- 23
++ -- 549
+- -- 496
+* -- 2391
+:= -- 2890
+add.period$ -- 55
 call.type$ -- 55
-change.case$ -- 56
-chr.to.int$ -- 0
+change.case$ -- 2
+chr.to.int$ -- 2
 cite$ -- 55
-duplicate$ -- 981
-empty$ -- 1508
-format.name$ -- 263
-if$ -- 4747
+duplicate$ -- 1125
+empty$ -- 1300
+format.name$ -- 569
+if$ -- 3945
 int.to.chr$ -- 0
-int.to.str$ -- 55
-missing$ -- 56
-newline$ -- 170
-num.names$ -- 55
-pop$ -- 83
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 358
+num.names$ -- 165
+pop$ -- 106
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 920
+skip$ -- 55
 stack$ -- 0
-substring$ -- 1517
-swap$ -- 578
-text.length$ -- 0
+substring$ -- 1284
+swap$ -- 1310
+text.length$ -- 111
 text.prefix$ -- 0
-top$ -- 0
-type$ -- 0
+top$ -- 1
+type$ -- 379
 warning$ -- 0
-while$ -- 180
-width$ -- 57
-write$ -- 566
+while$ -- 205
+width$ -- 0
+write$ -- 687
