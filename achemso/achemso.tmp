@@ -1,0 +1,3 @@
+\renewcommand*{\natmovechars}{.}
+Some text \cite{Coghill2006},
+more text \cite{Coghill2006}.
