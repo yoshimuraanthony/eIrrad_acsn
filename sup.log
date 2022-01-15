@@ -1,4 +1,10 @@
+<<<<<<< HEAD
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.12.4)  11 JAN 2022 08:45
+||||||| merged common ancestors
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.12.4)  9 JAN 2022 16:48
+=======
 This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  9 JAN 2022 19:56
+>>>>>>> 0aa4c42ad45cb3399e403d39eb6b2738dd14e61a
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -299,6 +305,39 @@ LaTeX Warning: Label `Yoshimura2018' multiply defined.
 )
 \openout1 = `sup.aux'.
 
+<<<<<<< HEAD
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 69.
+
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+||||||| merged common ancestors
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 68.
+
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+=======
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
 LaTeX Font Info:    ... okay on input line 68.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
@@ -316,6 +355,7 @@ LaTeX Font Info:    ... okay on input line 68.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 6
 8.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmr.fd
+>>>>>>> 0aa4c42ad45cb3399e403d39eb6b2738dd14e61a
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -374,39 +414,61 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+<<<<<<< HEAD
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 71.
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+||||||| merged common ancestors
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 70.
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+=======
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 7
 0.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omllmm.fd
+>>>>>>> 0aa4c42ad45cb3399e403d39eb6b2738dd14e61a
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
+<<<<<<< HEAD
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 71.
+
+||||||| merged common ancestors
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 70.
+
+=======
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
 70.
+>>>>>>> 0aa4c42ad45cb3399e403d39eb6b2738dd14e61a
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
+<<<<<<< HEAD
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 71.
+||||||| merged common ancestors
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 70.
+=======
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
 70.
+>>>>>>> 0aa4c42ad45cb3399e403d39eb6b2738dd14e61a
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 70.
+(Font)              <12> on input line 71.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 70.
+(Font)              <8> on input line 71.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 70.
+(Font)              <6> on input line 71.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 70.
+(Font)              <9> on input line 71.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 70.
+(Font)              <5> on input line 71.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 73.
+(Font)              <14.4> on input line 74.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 73.
+(Font)              <10> on input line 74.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 73.
+(Font)              <7> on input line 74.
  [1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
@@ -414,30 +476,30 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 <figS1.pdf, id=34, 1626.075pt x 542.025pt>
 File: figS1.pdf Graphic file (type pdf)
 <use figS1.pdf>
-Package pdftex.def Info: figS1.pdf  used on input line 368.
+Package pdftex.def Info: figS1.pdf  used on input line 369.
 (pdftex.def)             Requested size: 383.03014pt x 127.67363pt.
  [5 <./figS1.pdf>]
 <figS2.pdf, id=290, 433.62pt x 361.35pt>
 File: figS2.pdf Graphic file (type pdf)
 <use figS2.pdf>
-Package pdftex.def Info: figS2.pdf  used on input line 390.
+Package pdftex.def Info: figS2.pdf  used on input line 391.
 (pdftex.def)             Requested size: 229.82042pt x 191.5201pt.
  [6 <./figS2.pdf>]
 <figS3.pdf, id=333, 1626.075pt x 715.17188pt>
 File: figS3.pdf Graphic file (type pdf)
 <use figS3.pdf>
-Package pdftex.def Info: figS3.pdf  used on input line 413.
+Package pdftex.def Info: figS3.pdf  used on input line 414.
 (pdftex.def)             Requested size: 383.03014pt x 168.45827pt.
 <figS4.pdf, id=334, 1626.075pt x 978.65625pt>
 File: figS4.pdf Graphic file (type pdf)
 <use figS4.pdf>
-Package pdftex.def Info: figS4.pdf  used on input line 487.
+Package pdftex.def Info: figS4.pdf  used on input line 488.
 (pdftex.def)             Requested size: 383.03014pt x 230.52184pt.
  [7 <./figS3.pdf>] [8 <./figS4.pdf>]
 <figS5.pdf, id=1313, 433.62pt x 361.35pt>
 File: figS5.pdf Graphic file (type pdf)
 <use figS5.pdf>
-Package pdftex.def Info: figS5.pdf  used on input line 511.
+Package pdftex.def Info: figS5.pdf  used on input line 512.
 (pdftex.def)             Requested size: 229.82042pt x 191.5201pt.
  [9 <./figS5.pdf>]
 (./sup.bbl) [10] (./sup.aux)
@@ -446,12 +508,65 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
+ 12833 strings out of 492982
+ 231071 string characters out of 6134896
+ 292851 words of memory out of 5000000
+ 16264 multiletter control sequences out of 15000+600000
+ 589617 words of font info for 56 fonts, out of 8000000 for 9000
+||||||| merged common ancestors
+ 12832 strings out of 492982
+ 231049 string characters out of 6134896
+ 292852 words of memory out of 5000000
+ 16263 multiletter control sequences out of 15000+600000
+ 589617 words of font info for 56 fonts, out of 8000000 for 9000
+=======
  4862 strings out of 480608
  71930 string characters out of 5903631
  344262 words of memory out of 5000000
  20653 multiletter control sequences out of 15000+600000
  591683 words of font info for 58 fonts, out of 8000000 for 9000
+>>>>>>> 0aa4c42ad45cb3399e403d39eb6b2738dd14e61a
  1141 hyphenation exceptions out of 8191
+<<<<<<< HEAD
+ 42i,11n,38p,10402b,277s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx
+7.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/font
+s/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmr5.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmri9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmsy7.pfb>
+Output written on sup.pdf (10 pages, 536648 bytes).
+||||||| merged common ancestors
+ 42i,11n,38p,10402b,277s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx
+7.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/font
+s/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmr5.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmri9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmsy7.pfb>
+Output written on sup.pdf (10 pages, 536744 bytes).
+=======
  44i,11n,40p,968b,277s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/lo
 cal/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texliv
@@ -474,6 +589,7 @@ onts/type1/public/lm/lmri10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
 lmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy5.pfb>
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
 Output written on sup.pdf (10 pages, 536726 bytes).
+>>>>>>> 0aa4c42ad45cb3399e403d39eb6b2738dd14e61a
 PDF statistics:
  1422 PDF objects out of 1440 (max. 8388607)
  909 compressed objects within 10 object streams
