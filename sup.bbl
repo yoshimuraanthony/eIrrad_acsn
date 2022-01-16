@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{11}
+\begin{mcitethebibliography}{12}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -56,14 +56,16 @@ Inc.,~W.~R. {Mathematica, {V}ersion 12.3}.
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem[Bethe(1930)]{Bethe1930}
-Bethe,~H. \emph{Ann. Phys.} \textbf{1930}, \emph{397}, 325--400\relax
+Bethe,~H. {Zur Theorie des Durchgangs schneller Korpuskularstrahlen durch
+  Materie}. \emph{Ann. Phys.} \textbf{1930}, \emph{397}, 325--400\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem[Susi \latin{et~al.}(2019)Susi, Meyer, and Kotakoski]{Susi2019}
-Susi,~T.; Meyer,~J.~C.; Kotakoski,~J. \emph{Nat. Rev. Phys.} \textbf{2019},
-  \emph{1}, 397--405\relax
+Susi,~T.; Meyer,~J.~C.; Kotakoski,~J. {Quantifying transmission electron
+  microscopy irradiation effects using two-dimensional materials}. \emph{Nat.
+  Rev. Phys.} \textbf{2019}, \emph{1}, 397--405\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -71,8 +73,10 @@ Susi,~T.; Meyer,~J.~C.; Kotakoski,~J. \emph{Nat. Rev. Phys.} \textbf{2019},
 \bibitem[Kretschmer \latin{et~al.}(2020)Kretschmer, Lehnert, Kaiser, {V.
   Krasheninnikov}, and Krasheninnikov]{Kretschmer2020}
 Kretschmer,~S.; Lehnert,~T.; Kaiser,~U.; {V. Krasheninnikov},~A.;
-  Krasheninnikov,~A.~V. \emph{Nano Lett.} \textbf{2020}, \emph{20},
-  2865--2870\relax
+  Krasheninnikov,~A.~V. {Formation of defects in two-dimensional MoS$_2$ in
+  transmission electron microscope at electron energies below the knock-on
+  threshold : the role of electronic excitations}. \emph{Nano Lett.}
+  \textbf{2020}, \emph{20}, 2865--2870\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -80,8 +84,9 @@ Kretschmer,~S.; Lehnert,~T.; Kaiser,~U.; {V. Krasheninnikov},~A.;
 \bibitem[Komsa \latin{et~al.}(2012)Komsa, Kotakoski, Kurasch, Lehtinen, Kaiser,
   and Krasheninnikov]{Komsa2012}
 Komsa,~H.~P.; Kotakoski,~J.; Kurasch,~S.; Lehtinen,~O.; Kaiser,~U.;
-  Krasheninnikov,~A.~V. \emph{Phys. Rev. Lett.} \textbf{2012}, \emph{109},
-  035503--1--5\relax
+  Krasheninnikov,~A.~V. {Two-dimensional transition metal dichalcogenides under
+  electron irradiation: Defect production and doping}. \emph{Phys. Rev. Lett.}
+  \textbf{2012}, \emph{109}, 035503--1--5\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -102,8 +107,10 @@ Sakurai,~J.~J.; Napolitano,~J. \emph{{Modern Quantum Mechanics}}, 2nd ed.;
 \EndOfBibitem
 \bibitem[Yoshimura \latin{et~al.}(2018)Yoshimura, Lamparski, Kharche, and
   Meunier]{Yoshimura2018}
-Yoshimura,~A.; Lamparski,~M.; Kharche,~N.; Meunier,~V. \emph{Nanoscale}
-  \textbf{2018}, \emph{10}, 2388--2397\relax
+Yoshimura,~A.; Lamparski,~M.; Kharche,~N.; Meunier,~V. {First-principles
+  simulation of local response in transition metal dichalcogenides under
+  electron irradiation}. \emph{Nanoscale} \textbf{2018}, \emph{10},
+  2388--2397\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

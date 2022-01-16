@@ -2,9 +2,10 @@
 
 \usepackage{float}  % prevent 'floating' of figures (force position)
 \usepackage{cite}  % order lists of citations
-% \usepackage[labelsep=period]{caption}  % end caption title with '.' (not ':')
 \usepackage{nameref}  % reference unnumbered sections by name
 \usepackage[sort&compress,numbers,super]{natbib}  % superscript citations
+\AtBeginDocument{\nocite{achemso-control}}  % read @Control in .bib file
+\bibliographystyle{achemso}
 \usepackage{url}  % recognize url in .bib file
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
@@ -584,8 +585,6 @@ energies greater than 1 keV.
 Nonetheless, the use of $E_\text{min}$ is necessary for the calculation of a
 finite sputtering cross section.
 
-
-\bibliographystyle{achemso}
 \bibliography{library}
 % \bibliographystyle{ieeetr}
 

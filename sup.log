@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.28)  15 JAN 2022 14:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.28)  15 JAN 2022 15:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1669,6 +1669,10 @@ LaTeX Font Info:    Try loading font information for OT1+lmr on input line 72.
 /ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
+
+Package natbib Warning: Citation `achemso-control' undefined on input line 72.
+
+
 (/collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/tex/context/
 base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1827,48 +1831,52 @@ LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 53.
 (/collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/tex/latex/lm
 /ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [10] (./sup.aux) ) 
+))
+
+Package natbib Warning: There were undefined citations.
+
+[10] (./sup.aux) ) 
 Here is how much of TeX's memory you used:
- 12378 strings out of 493013
- 219558 string characters out of 6119099
- 278578 words of memory out of 5000000
- 15775 multiletter control sequences out of 15000+600000
+ 12379 strings out of 493013
+ 219575 string characters out of 6119099
+ 278669 words of memory out of 5000000
+ 15776 multiletter control sequences out of 15000+600000
  63296 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,11n,38p,10402b,280s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/te
-xmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/collab/usr/global/tools/texlive/toss_
-3_x86_64_ib/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/collab/usr/globa
-l/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathit.e
-nc}{/collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/enc
-/dvips/lm/lm-rm.enc}{/collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/tex
-mf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</collab/usr/global/tools/texlive/toss
-_3_x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></collab/usr/glob
-al/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/lmbx12.
-pfb></collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/ty
-pe1/public/lm/lmbx7.pfb></collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016
-/texmf-dist/fonts/type1/public/lm/lmex10.pfb></collab/usr/global/tools/texlive/
-toss_3_x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></collab/usr/
-global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/lmm
-i12.pfb></collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/font
-s/type1/public/lm/lmmi5.pfb></collab/usr/global/tools/texlive/toss_3_x86_64_ib/
-2016/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></collab/usr/global/tools/texli
-ve/toss_3_x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/lmr10.pfb></collab/us
-r/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/l
-mr12.pfb></collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fon
-ts/type1/public/lm/lmr5.pfb></collab/usr/global/tools/texlive/toss_3_x86_64_ib/
-2016/texmf-dist/fonts/type1/public/lm/lmr6.pfb></collab/usr/global/tools/texliv
-e/toss_3_x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/lmr7.pfb></collab/usr/
-global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/lmr
-8.pfb></collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/
-type1/public/lm/lmri10.pfb></collab/usr/global/tools/texlive/toss_3_x86_64_ib/2
-016/texmf-dist/fonts/type1/public/lm/lmri9.pfb></collab/usr/global/tools/texliv
-e/toss_3_x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></collab/us
-r/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/l
-msy5.pfb></collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fon
-ts/type1/public/lm/lmsy7.pfb></collab/usr/global/tools/texlive/toss_3_x86_64_ib
-/2016/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on sup.pdf (10 pages, 561816 bytes).
+{/collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf
+-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/collab/usr/global/tools/texlive/toss_3_x
+86_64_ib/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/collab/usr/global/t
+ools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}
+{/collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/enc/dv
+ips/lm/lm-rm.enc}{/collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-
+dist/fonts/enc/dvips/lm/lm-mathex.enc}</collab/usr/global/tools/texlive/toss_3_
+x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></collab/usr/global/
+tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
+></collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/type1
+/public/lm/lmbx7.pfb></collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/te
+xmf-dist/fonts/type1/public/lm/lmex10.pfb></collab/usr/global/tools/texlive/tos
+s_3_x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></collab/usr/glo
+bal/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/lmmi12
+.pfb></collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/t
+ype1/public/lm/lmmi5.pfb></collab/usr/global/tools/texlive/toss_3_x86_64_ib/201
+6/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></collab/usr/global/tools/texlive/
+toss_3_x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/lmr10.pfb></collab/usr/g
+lobal/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/lmr1
+2.pfb></collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/
+type1/public/lm/lmr5.pfb></collab/usr/global/tools/texlive/toss_3_x86_64_ib/201
+6/texmf-dist/fonts/type1/public/lm/lmr6.pfb></collab/usr/global/tools/texlive/t
+oss_3_x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/lmr7.pfb></collab/usr/glo
+bal/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/lmr8.p
+fb></collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/typ
+e1/public/lm/lmri10.pfb></collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016
+/texmf-dist/fonts/type1/public/lm/lmri9.pfb></collab/usr/global/tools/texlive/t
+oss_3_x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></collab/usr/g
+lobal/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/lmsy
+5.pfb></collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/
+type1/public/lm/lmsy7.pfb></collab/usr/global/tools/texlive/toss_3_x86_64_ib/20
+16/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on sup.pdf (10 pages, 561794 bytes).
 PDF statistics:
  1427 PDF objects out of 1440 (max. 8388607)
  913 compressed objects within 10 object streams
