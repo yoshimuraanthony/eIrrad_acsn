@@ -2,9 +2,10 @@
 
 \usepackage{float}  % prevent 'floating' of figures (force position)
 \usepackage{cite}  % order lists of citations
-% \usepackage[labelsep=period]{caption}  % end caption title with '.' (not ':')
 \usepackage{nameref}  % reference unnumbered sections by name
-% \usepackage{style=chem-acs]{biblatex}
+\usepackage[sort&compress,numbers,super]{natbib}  % superscript citations
+\AtBeginDocument{\nocite{achemso-control}}  % read @Control in .bib file
+\bibliographystyle{achemso}
 \usepackage[utf8]{inputenc} 
 \usepackage{amsmath}
 \usepackage{physics} 
@@ -109,8 +110,8 @@ The holy grail of materials engineering is atomic scale control of the
 material structure.
 % This requires a means of single atom manipulation.
 Towards this aim, electron irradiation by transmission electron microscopy
-(TEM) can be an effective means of structural manipulation with spatial control
-\cite{Banhart1999, Egerton2013, Zhao2017, Susi2019}.
+(TEM) can be an effective means of structural manipulation with spatial
+control.\cite{Banhart1999, Egerton2013, Zhao2017, Susi2019}
 Structural changes under electron irradiation can arise \textit{via} atomic displacement
 in which an incident electron nudges a material atom from its initial site.  We
 call this atom the primary knock-on atom (PKA).  Two-dimensional (2D) crystals
@@ -135,24 +136,24 @@ beam electron exceeds some critical energy $\epsilon_c$.
 % In most ground state materials, the critical energy is predicted to be
 % anywhere from 10s to 100s of keV.
 Many computational models have been proposed to predict both $E_d$ and
-$\epsilon_c$ to calculate electron beam-induced sputtering rates in 2D crystals
-\cite{Meyer2012, Susi2016, Yoshimura2018, Susi2019}.
-However, the vast majority of current
-methods focus solely on interactions between the beam electrons and material
-nuclei, neglecting any coupling with the material’s electrons.
-Thus, while present-day models give reasonable predictions for conductors
-\cite{Meyer2012}, where electronic relaxation is rapid, they often vastly
-underestimate the atomic displacement rates in insulators.
+$\epsilon_c$ to calculate electron beam-induced sputtering rates in 2D
+crystals.\cite{Meyer2012, Susi2016, Yoshimura2018, Susi2019}
+However, the vast majority of current methods focus solely on interactions
+between the beam electrons and material nuclei, neglecting any coupling with
+the material's electrons.
+Thus, while present-day models give reasonable predictions for
+conductors,\cite{Meyer2012} where electronic relaxation is rapid, they often
+vastly underestimate the atomic displacement rates in insulators.
 For example, the critical energy for sputtering boron or nitrogen from
-hexagonal boron nitride (hBN) is predicted to be 80 keV \cite{Kotakoski2010}.
-However, sputtering has been observed in hBN under 30 keV irradiation
-\cite{Cretu2015}.
+hexagonal boron nitride (hBN) is predicted to be 80 keV.\cite{Kotakoski2010}
+However, sputtering has been observed in hBN under 30 keV
+irradiation.\cite{Cretu2015}
 Furthermore, selenium sputters from WSe$_2$ and MoSe$_2$ under irradiation
 energies of 60 and 80 keV, respectively.  These energies are almost 150 keV
-below their predicted critical energies \cite{Lin2015, Lehnert2017}.
+below their predicted critical energies.\cite{Lin2015, Lehnert2017}
 Lastly, while the calculated critical energy for sulfur sputtering in MoS$_2$
-is about 90 keV, sulfur has been shown to sputter under 20 keV beams
-\cite{Kretschmer2020}.
+is about 90 keV, sulfur has been shown to sputter under 20 keV
+beams.\cite{Kretschmer2020}
 % Perhaps most surprising is that sulfur and selenium sputtering rates in
 % MoS$_2$ and MoSe$_2$ were observed to be about equal under 80 keV irradiation
 % \cite{Lehnert2017}, despite selenium being more than two times heavier than
@@ -166,7 +167,7 @@ Discrepancies like these suggest that the displacement thresholds in insulating
 crystals are much smaller than what is predicted by ground-state theory.
 Lehnert \textit{et al.}  have proposed that the consideration of inelastic scattering,
 \textit{i.e.}, beam-induced electronic excitation, can lead to such a reduction in the
-displacement threshold \cite{Lehnert2017}.
+displacement threshold.\cite{Lehnert2017}
 This would increase the sputtering cross section for all beam energies and
 enable sputtering for energies well-below the ground state $\epsilon_c$.
 
@@ -175,10 +176,10 @@ To account for these effects, we combine quantum electrodynamics (QED) and
 density functional theory (DFT) to derive the probability of beam-induced
 electronic excitation in 2D insulating crystals.
 The basic idea is as follows: DFT can provide effective single-particle states
-that can be decomposed into a plane-wave basis \cite{Hohenberg1964, Kohn1965,
-Kresse1996a}, while QED is well-equipped to describe how each plane-wave
-evolves in time through interactions with an electromagnetic field
-\cite{Lourenco-Martins2021, Peskin1995, Lancaster2014}.
+that can be decomposed into a plane-wave basis,\cite{Hohenberg1964, Kohn1965,
+Kresse1996a} while QED is well-equipped to describe how each plane-wave
+evolves in time through interactions with an electromagnetic
+field. \cite{Lourenco-Martins2021, Peskin1995, Lancaster2014}
 Thus, a plane-wave decomposition of the Kohn-Sham orbitals can allow for a
 component-by-component treatment of the interactions between the beam and
 material electrons.
@@ -226,8 +227,8 @@ $\epsilon_b$.
 The McKinley and Feshbach differential cross section can adequately describe
 $d\sigma/dE$
 % This is adequately described by the McKinley-Feshbach differential cross section
-for light nuclei (Z $<$ 20) \cite{Mott1929, McKinley1948, Oen1973,
-Egerton2010}.  Setting $\hbar = c = 1$,
+for light nuclei (Z $<$ 20).\cite{Mott1929, McKinley1948, Oen1973,
+Egerton2010}  Setting $\hbar = c = 1$,
 
 \begin{equation}
   \frac{d\sigma}{dE}
@@ -272,8 +273,7 @@ completely at odds with equation (\ref{eq:basicSigma}).
 With this in mind, a fair amount of work has been done to treat deviations from
 equation (\ref{eq:basicSigma}).
 Notably, several studies have explored the effects of temperature on
-displacement cross sections 
-\cite{Meyer2012,Susi2016,Yoshimura2018}.
+displacement cross sections. \cite{Meyer2012,Susi2016,Yoshimura2018}
 This consideration involves calculating the degree to which the pre-collision
 thermal motion of the nucleus increases the cross section.
 However, these techniques essentially amount to smearing the beam energy
@@ -470,7 +470,8 @@ The following subsections address each step (i-iv) in detail.
 \end{figure}
 
 We first derive the scattering amplitude for momentum transfer between two free
-electrons \textit{via} M{\o}ller scattering \cite{Moller1932, Kragh1992, Roqu1992}.
+electrons \textit{via} M{\o}ller scattering. \cite{Moller1932, Kragh1992,
+Roqu1992}
 With this, the interaction between actual material states can be written as a
 linear combination of these free-particle interactions.
 Going forward, we label the 4-momenta of the incoming electrons as $p_1$ and
@@ -506,7 +507,7 @@ by two tree-level diagrams, which we call the $t$- and $u$-channels (figure
 % and $u$-channels.  We can now use Wick's theorem to write the last expression
 % in equation (\ref{eq:contraction}) in terms of Dirac spinors, as laid out in
 % section \ref{app:wicks}. Doing this and integrating over $x$ and $y$ yields
-Using Feynman's rules \cite{Peskin1995, Lancaster2014}, we can write these
+Using Feynman's rules, \cite{Peskin1995, Lancaster2014} we can write these
 diagrams in terms of Dirac spinors, yielding the invariant matrix element
 
 \begin{equation} 
@@ -584,7 +585,7 @@ amplitude
   \mathcal{M}(p_4p_3\leftarrow p_2p_1),
 \end{equation}
 %
-where $\hat{T}$ is the scattering operator \cite{Peskin1995, Lancaster2014}.
+where $\hat{T}$ is the scattering operator.\cite{Peskin1995, Lancaster2014}
 This gives the amplitude for two free electrons with momenta $p_1$ and $p_2$ to
 scatter into $p_3$ and $p_4$.
 Equation (\ref{eq:T}) is used to derive the scattering amplitude between two
@@ -1025,8 +1026,8 @@ with increasing $\epsilon_b$ for all $n_i>0$.
 This is because a faster beam electron has less time to interact with the
 material and cause an excitation.
 In this regime, $P_i(\epsilon_b)$ is proportional to $\epsilon_b^{-1}$, a
-relationship originally predicted by Bethe \cite{Bethe1930, Inokuti1967,
-Kretschmer2020}.
+relationship originally predicted by Bethe.\cite{Bethe1930, Inokuti1967,
+Kretschmer2020}
 This means that multiple excitations are more likely at low beam energies.
 Furthermore, the probability of remaining in the ground state $P(\epsilon_b,
 n_i=0)$ vanishes as $\epsilon_b$ goes to zero.
@@ -1050,7 +1051,7 @@ occupied and unoccupied states (see \textit{\nameref{sec:crystal}}).
 Thus, the smallest possible denominator of the $t$-channel in equation
 (\ref{eq:M}) is proportional to the difference in eigenvalues squared.
 The experimentally measured band gap of MoS$_2$ about 1.9 eV \cite{Gusakova2017}
-while that of hBN is about 6.1 eV \cite{Elias2019}.
+while that of hBN is about 6.1 eV.\cite{Elias2019}
 This means MoS$_2$ hosts transitions with smaller eigenvalue differences,
 making the summands in equation (\ref{eq:ampCode}) larger.
 
@@ -1101,7 +1102,7 @@ As $E_d$ is the lower bound of integration over $E$ in equation
 greatly increase the sputtering cross section.
 Exactly how excitations change $E_d$ is an ambitious study on its own,
 requiring a careful consideration of the excited electrons' evolution and
-various relaxation pathways \cite{Lingerfelt2019a}.
+various relaxation pathways.\cite{Lingerfelt2019a}
 Here instead, we make three simplifying assumptions that allow us to calculate
 $E_d$ with only ground state DFT.
 
@@ -1132,12 +1133,12 @@ $E_0$ and $E_s$.  To facilitate this, we make the following assumptions.
 To justify this, we shift our focus to the material electrons immediately after
 the collision.  There are now $n_i$ electrons in the conduction band and $n_i$
 holes in the valence bands.  Kretschmer \textit{et al.} simulated the time-evolution of
-these excitations using Ehrenfest dynamics \cite{Kretschmer2020,Li2005}.
+these excitations using Ehrenfest dynamics.\cite{Kretschmer2020,Li2005}
 They found that the excited electrons relax nonradiatively to the conduction
 band minimum (CBM) in a few femtoseconds, while the holes in the valence band
 take a similar amount of time to relax to the valence band maximum (VBM).
-In contrast, the PKA takes several hundreds of femtoseconds to fully sputter
-\cite{Yoshimura2018}.
+In contrast, the PKA takes several hundreds of femtoseconds to fully sputter.
+\cite{Yoshimura2018}
 Thus, the nonradiative relaxation of the electronic structure is essentially
 instantaneous, and we can assume that all excited electrons and holes occupy
 the CBM and VBM respectively before the PKA has been displaced by an
@@ -1167,8 +1168,8 @@ prohibitively expensive.
 % Here we choose to perform as few DFT calculations as possible while still
 Here we seek a much less costly set of DFT calculations that can still provide
 a reasonable approximation for $E_s$.
-To this end, we draw upon another finding of Kretschmer \textit{et al.}
-\cite{Kretschmer2020}.
+To this end, we draw upon another finding of Kretschmer \textit{et al.}.
+\cite{Kretschmer2020}
 After excitation, the displacement of the PKA causes the occupied and
 unoccupied CBM and VBM states to converge into the band gap and localize on the
 resulting defect.
@@ -1243,7 +1244,7 @@ neighboring atoms.
 For this reason, we calculate the energy of the vacant system without relaxing
 the structure, as it has been shown that the free energy gained by leaving the
 structure unrelaxed roughly matches the energy dissipated to the
-surrounding material \cite{Komsa2012}.
+surrounding material.\cite{Komsa2012}
 We call the energy of the unrelaxed ground state vacancy $E_v$.
 Thus, we calculate the plateau energy using $E_s = E_v + E_a$, the sum of the
 ground state vacancy and isolated atom free energies.
@@ -1305,8 +1306,8 @@ This means there must be some distance $d$ beyond which SE no
 longer affects the forces on the sputtered atom, leaving the energy surface
 unchanged.
 We take $d=4.5$ {\AA} in line with Kretschmer \textit{et al.}'s study, though we
-acknowledge that the exact meaning of this distance is different in their work
-\cite{Kretschmer2020}.
+acknowledge that the exact meaning of this distance is different in their work.
+\cite{Kretschmer2020}
 
 We wish to capture this idea while making the calculation of $P_f$ as
 intuitive as possible.
@@ -1374,7 +1375,7 @@ given in the subsections titled \textit{\nameref{sec:hBN}} and
 \textit{\nameref{sec:MoS2}}.
 The three largest displacement thresholds for MoS$_2$ with $n_f = 0$, 1, and 2
 excitations are similar to those calculated with DFT-based molecular dynamics
-simulations \cite{Kretschmer2020}.
+simulations.\cite{Kretschmer2020}
 This provides some assurance that our simplified approach to calculating $E_d$
 yields reasonable results.
 Excitation numbers $n_f$ greater than those listed in table \ref{tab:Ed} make
@@ -1586,7 +1587,7 @@ cross sections of hBN and MoS$_2$.
 
 Electron beam irradiation has been shown to bore nanopores in monolayer hBN at
 beam energies far beneath the calculated ground state critical energy of
-$\epsilon_c\sim80$ keV \cite{Jin2009,Meyer2009,Kotakoski2010,Cretu2015}.
+$\epsilon_c\sim80$ keV.\cite{Jin2009,Meyer2009,Kotakoski2010,Cretu2015}
 In a pristine hBN layer, these beam-induced pores can be initialized from
 isolated boron and nitrogen vacancies.
 The atoms surrounding these vacancies have reduced coordination numbers, and
@@ -1594,12 +1595,12 @@ thus, smaller displacement thresholds than those in the pristine material.
 Therefore, the atoms lining the defect are more likely to sputter than their
 surface counterparts for a given beam energy.
 As the edge atoms continue to sputter away at a high rate, the nanopore grows,
-eventually extending up to a few nm in diameter
-\cite{Meyer2009,Cretu2015,Dogan2020}.
+eventually extending up to a few nm in diameter.
+\cite{Meyer2009,Cretu2015,Dogan2020}
 
 Cretu \textit{et al.} measured the radial growth of these nanopores under electron
-irradiation for several temperatures ranging from 673 to 1473 K
-\cite{Cretu2015}.
+irradiation for several temperatures ranging from 673 to 1473 K.
+\cite{Cretu2015}
 By dividing the radial growth rate by the beam current, they estimated the
 sputtering cross section to be around 25 barn under both 30 and 60 keV beams at
 temperatures of 1273 K and below (figure \ref{fig:edgeCross}c).
@@ -1634,7 +1635,7 @@ hBN.
 Future work should consider the effects of localized beam electron states to
 simulate beams with smaller focal points.
 Lastly, temperature effects on the cross section are considered in the manner
-described in our previous work \cite{Yoshimura2018}.
+described in our previous work.\cite{Yoshimura2018}
 
 \begin{figure} 
   \centering
@@ -1652,7 +1653,7 @@ described in our previous work \cite{Yoshimura2018}.
     The dashed curves ignore the possibility of beam-induced excitation
     (labelled ``gro.'' for ground).
     The black squares are experimentally observed sputtering cross sections
-    for hBN at 1273 K \cite{Cretu2015}.
+    for hBN at 1273 K.\cite{Cretu2015}
     The consideration of beam-induced excitations reduces the disagreement
     between theory and experiment substantially.
 %     Beam-induced excitations enable sputtering at beam energies well below the
@@ -1664,7 +1665,7 @@ described in our previous work \cite{Yoshimura2018}.
 Fitting our cross section curves to the data of Cretu \textit{et al.} yields an excellent
 agreement if the predicted excitation lifetime is set to $\tau \sim 240$ fs.
 This predicted lifetime is much shorter than the reported excitation lifetime
-of $\sim$0.75 ns in pristine hBN \cite{Li2016b}, indicating that the sputtering
+of $\sim$0.75 ns in pristine hBN,\cite{Li2016b} indicating that the sputtering
 process can significantly reduce the excitation lifetimes of hBN.
 We suspect that the atomic motion gives rise to non-radiative relaxation
 pathways that are not explicitly accounted for here. 
@@ -1705,17 +1706,17 @@ under electron irradiation.
 %------------------------------------------------------------------------------
 
 Kretschmer \textit{et al.} measured the sputtering cross section of sulfur from MoS$_2$
-for several beam energies ranging from 20 to 80 keV \cite{Kretschmer2020}.
+for several beam energies ranging from 20 to 80 keV.\cite{Kretschmer2020}
 They found a peak in the cross section at 30 keV, much less than the predicted
-ground state $\epsilon_c\sim 90$ keV \cite{Kretschmer2020}.
+ground state $\epsilon_c\sim 90$ keV.\cite{Kretschmer2020}
 To help explain this unexpected peak, we calculate the cross section for sulfur
 sputtering from pristine MoS$_2$ (figure \ref{fig:MoS2Cross}).
 The vacant system free energy $E_v$ for the calculation of $\{E_d\}$ is that of a
 MoS$_2$ supercell with a single sulfur vacancy.
 $E_a$ is then the free energy of an isolated sulfur atom, and $E_0(0)$ is that
 of the pristine MoS$_2$ supercell.
-We then set $E_g$ equal to the experimental band gap of 1.88 eV
-\cite{Gusakova2017}.
+We then set $E_g$ equal to the experimental band gap of 1.88 eV.
+\cite{Gusakova2017}
 Using the resulting $\{E_d\}$, we find that summing over the contributions
 of final excitation numbers $n_f > 2$ to the sputtering cross section produces
 a peak just below 30 keV, matching Kretschmer \textit{et al.}'s findings remarkably
@@ -1723,8 +1724,8 @@ well.
 In fitting to this peak, we predict an excitation lifetime of $\tau \sim 81$
 fs.
 This is again much shorter than the excitation lifetime of pristine MoS$_2$,
-which is on the order of a few picoseconds \cite{Korn2011, Lagarde2014,
-Palummo2015a}.
+which is on the order of a few picoseconds.\cite{Korn2011, Lagarde2014,
+Palummo2015a}
 However, this is also much shorter than the fitted lifetime of hBN found in the
 previous subsection, consistent with the fact that the excitation lifetime of
 pristine hBN is much longer than that of MoS$_2$.
@@ -1795,8 +1796,8 @@ sputtering cross section are greater.
     possibility of beam-induced excitation.
 %     The colored curves are the contributions of various numbers of excitation
 %     to the total cross section with $\tau=81$ fs.
-    The black squares are experimentally observed cross sections at 300 K
-    \cite{Kretschmer2020}.
+    The black squares are experimentally observed cross sections at 300 K.
+    \cite{Kretschmer2020}
     The contribution from the sum of all $n_f>2$ final excitations matches
     the experimental cross section remarkably well.
   }
@@ -1876,8 +1877,8 @@ Future studies should also consider additional electronic relaxation pathways
 to determine their effect on $P_f$.
 Correspondingly, other electronic responses such as ionization, core
 excitations, and second order electronic excitation effects such as Auger
-scattering can be incorporated into the calculation of $P_i$
-\cite{Lagarde2014,Kozawa2014,Nie2015,Shi2013b}.
+scattering can be incorporated into the calculation of $P_i$.
+\cite{Lagarde2014,Kozawa2014,Nie2015,Shi2013b}
 % Core excitations are less likely to affect sputtering rates since
 % they have shorter lifetimes and a smaller excitation probability due to the
 % much larger excitation energies involved.  
@@ -1894,10 +1895,10 @@ Furthermore, the methods here can be modified to accommodate more advanced DFT
 techniques.
 For example, the calculation of $P_i$ should be made compatible with ultrasoft
 and projector augmented wave pseudopotentials \cite{Blochl1994} in a manner
-similar to that employed in modern GW codes \cite{Shishkin2006a, Gajdos2006,
-Paier2005}.
+similar to that employed in modern GW codes.\cite{Shishkin2006a, Gajdos2006,
+Paier2005}
 In addition, the plane-wave coefficients of excited electronic states can be
-calculated self-consistently using constrained DFT \cite{Kaduk2012}.  
+calculated self-consistently using constrained DFT.\cite{Kaduk2012}
 % Future Needs
 Perhaps most importantly, progress in this field requires much more experimental
 data.
@@ -1938,16 +1939,16 @@ Free energy calculations were carried out with the Vienna ab initio Simulation
 Package (VASP) \cite{Kresse1996, Kresse1996a} implementing the projector
 augmented wave (PAW) method \cite{Blochl1994} along with the
 Perdew-Burke-Ernserhof (PBE) generalized gradient approximation (GGA) to the
-exchange correlation functional \cite{Perdew1996}.
+exchange correlation functional. \cite{Perdew1996}
 Van der Waals interactions were accounted for using the optB88-vdW density
-functional methods \cite{Klimes2010, Klimes2011}.
+functional methods. \cite{Klimes2010, Klimes2011}
 All parameters were converged so that any increase in precision would change
 the total free energy by less than 1 meV per atom.
 The cutoff energies for hBN and MoS$_2$ were set to 800 and 550 eV
 respectively, while the BZs of both materials' pristine unit cells were sampled
-with a $\Gamma$-centered $6\times6\times1$ Monkhorst-Pack meshes
-\cite{Monkhorst1976}, corresponding to 0.417 and 0.328 and k-points per inverse
-{\AA} for hBN and MoS$_2$ respectively.
+with a $\Gamma$-centered $6\times6\times1$ Monkhorst-Pack
+meshes, \cite{Monkhorst1976} corresponding to 0.417 and 0.328 and k-points per
+inverse {\AA} for hBN and MoS$_2$ respectively.
 To achieve the same k-point densities, surface vacancies in MoS$_2$ and edge
 vacancies in hBN were placed in respective $6\times6\times1$ and
 $4\times1\times1$ supercells whose BZs were sampled with a single k-point on
@@ -1962,9 +1963,9 @@ persisted until the all Hellmann-Feynman forces settled below 1
 meV/{\AA}.
 
 Because equation (\ref{eq:ampCode}) relies on the orthogonality of the
-Kohn-Sham orbitals, the optimized norm-conserving Vanderbilt pseudopotentials
-\cite{Hamann2013, Schlipf2015} implemented in Quantum ESPRESSO
-\cite{Giannozzi2009} were used to determine all plane-wave coefficients
+Kohn-Sham orbitals, the optimized norm-conserving Vanderbilt
+pseudopotentials \cite{Hamann2013, Schlipf2015} implemented in Quantum
+ESPRESSO \cite{Giannozzi2009} were used to determine all plane-wave coefficients
 $C^n_\mathbf{G+k}$.
 The sum of all transition probabilities $S$ defined in equation (\ref{eq:S})
 was used to gage the convergence of all parameters, which were deemed converged
@@ -1991,18 +1992,18 @@ The most dense k-point meshes used to fit these curves had dimensions of
 $45\times45\times1$ and $36\times36\times1$ for hBN and MoS$_2$ respectively.
 
 %-----------------------------------------------------------------------------
-\section*{Supporting Information}
+\section*{Supporting Information Available}
 \label{sec:si}
 %-----------------------------------------------------------------------------
 
 S1: Derivation of the invariant matrix element $\mathcal{M}$ introduced in
-equation (\ref{eq:M}).
+equation (\ref{eq:M}),
 S2: Description of the normalization scheme used for the integral in equation
-(\ref{eq:amp}).
-S3: Derivation of $p_3^z$ that conserves energy and momentum.
-S4: Convergence of $\sigma$ with respect to $n_i^\text{max}$.
-S5: Peaks in the sputtering cross section of hBN for low beam energies.
-S6: Fitting and convergence of $S$ with respect to various parameters.
+(\ref{eq:amp}),
+S3: Derivation of $p_3^z$ that conserves energy and momentum,
+S4: Convergence of $\sigma$ with respect to $n_i^\text{max}$,
+S5: Peaks in the sputtering cross section of hBN for low beam energies,
+S6: Fitting and convergence of $S$ with respect to various parameters,
 S7: Derivation of the minimum energy transfer $E_\text{min}$ mentioned after
 equation (\ref{eq:Ed}).
 (PDF)
@@ -2037,7 +2038,7 @@ Sciences, a U.S. DOE Office of Science User Facility.
 
 % \printbibliography 
 \bibliography{library}
-\bibliographystyle{ieeetr}
+% \bibliographystyle{ieeetr}
 \end{document}
 
 %------------------------------------------------------------------

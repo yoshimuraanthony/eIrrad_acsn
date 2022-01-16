@@ -2,8 +2,11 @@
 
 \usepackage{float}  % prevent 'floating' of figures (force position)
 \usepackage{cite}  % order lists of citations
-% \usepackage[labelsep=period]{caption}  % end caption title with '.' (not ':')
 \usepackage{nameref}  % reference unnumbered sections by name
+\usepackage[sort&compress,numbers,super]{natbib}  % superscript citations
+\AtBeginDocument{\nocite{achemso-control}}  % read @Control in .bib file
+\bibliographystyle{achemso}
+\usepackage{url}  % recognize url in .bib file
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{physics}
@@ -77,13 +80,13 @@ Polytechnic Institute, Troy, NY 12180, USA}
 
 As the excitation amplitude in equation (\ref{eq:ampCode}) contains the
 invariant matrix element $\mathcal{M}$ and not $|\mathcal{M}|^2$, we are unable
-to use the spin sum identities typically used to derive many QED cross sections
-\cite{Peskin1995, Lancaster2014}.
+to use the spin sum identities typically used to derive many QED cross
+sections. \cite{Peskin1995, Lancaster2014}
 % To this end, the Mathematica notebook included in the supplemental material
 % yields
 Nonetheless, the evaluation of $\mathcal{M}$ in equation (\ref{eq:M}) is
 straightforward, though a bit cumbersome.
-In the Dirac basis \cite{Bjorken1964},
+In the Dirac basis,\cite{Bjorken1964}
 
 \begin{equation}
   \gamma^0
@@ -207,7 +210,7 @@ When integrating over 4-momentum space as is done in the subsection titled
 \textit{\ref{sec:wavepackets}}, Lorentz invariance constrains a particle's
 4-momentum to obey $p^2 = m^2$.
 It follows that the 4-momentum integration measure $d^4p$ is always multiplied
-by a delta function $\delta(p^2-m^2)$, \texit{i.e.},
+by a delta function $\delta(p^2-m^2)$, \textit{i.e.},
 
 \begin{equation}
     d^4p\delta(p^2 - m^2)\theta(p^0)
@@ -446,7 +449,7 @@ and record the best fit
 $S_\infty$ for each
 % and then use equation (\ref{eq:SNk}) to determine
 $\epsilon_b$.
-Based on the work of Bethe \cite{Bethe1930, Susi2019, Kretschmer2020}, we fit the resulting values of
+Based on the work of Bethe,\cite{Bethe1930, Susi2019, Kretschmer2020} we fit the resulting values of
 $S_\infty(\epsilon_b)$ to an inverse function,
 
 \begin{equation}
@@ -527,11 +530,11 @@ Thus, we approximate the maximum cross sectional area $\sigma_\text{max}$ of
 these atoms to be $\Omega_\text{hBN}/2$, where $\Omega_\text{hBN}$ is the area
 of the hBN unit cell.
 On the other hand, molybdenum is much heavier than sulfur and has a much larger
-displacement threshold in MoS$_2$ \cite{Komsa2012}.  
+displacement threshold in MoS$_2$.\cite{Komsa2012}  
 This means that only the sputtering of sulfur needs to be considered.
 Additionally, of the two sulfur atoms in the MoS$_2$ unit cell, only the atom
-on the outgoing surface is eligible to sputter from a pristine system
-\cite{Komsa2012}.
+on the outgoing surface is eligible to sputter from a pristine system.
+\cite{Komsa2012}
 Therefore, $\sigma_\text{max}$ for sulfur sputtering from MoS$_2$ is
 $\Omega_\text{MoS$_2$}$, the area of the MoS$_2$ unit cell.
 
@@ -582,9 +585,8 @@ energies greater than 1 keV.
 Nonetheless, the use of $E_\text{min}$ is necessary for the calculation of a
 finite sputtering cross section.
 
-
 \bibliography{library}
-\bibliographystyle{ieeetr}
+% \bibliographystyle{ieeetr}
 
 \end{document}
 
